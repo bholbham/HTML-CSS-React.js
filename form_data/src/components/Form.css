@@ -1,0 +1,49 @@
+.form_data {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+.form_data div {
+  width: 100%;
+  justify-content: space-between;
+}
+.text {
+  display: flex;
+}
+.text input {
+  width: 400px;
+}
+select {
+  width: 400px;
+  outline: none;
+}
+#btn {
+  text-align: center;
+}
+input {
+  outline: none;
+}
+#email {
+  font-weight: 500;
+}
+#radio {
+  font-weight: 500;
+}
+button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(31, 185, 26);
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(21, 155, 17);
+}

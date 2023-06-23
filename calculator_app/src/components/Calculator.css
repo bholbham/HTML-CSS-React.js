@@ -1,0 +1,33 @@
+.calculator_wrapper {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  background-color: black;
+  gap: 4px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.flex_item {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #505050;
+}
+#zero {
+  width: 308px;
+  border-radius: 50px;
+}
+#top {
+  background-color: #d4d4d2;
+}
+#right {
+  background-color: #ff9500;
+}

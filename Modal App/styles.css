@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+}
+.card {
+  height: 50%;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  padding: 0;
+  gap: 8%;
+  border-radius: 2%;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px black;
+  z-index: 1;
+}
+.profile {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 15%;
+  position: relative;
+}
+.profile img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  zoom: 37%;
+}
+.content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8%;
+}
+.bio {
+  display: flex;
+  gap: 4%;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10%;
+}
+.share-profile,
+.follow-btn {
+  border: none;
+  padding: 10px;
+  font-size: small;
+  background-color: rgba(248, 248, 248, 0.919);
+  border-radius: 5%;
+  font-weight: 100;
+  cursor: pointer;
+}
+#name {
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+#designation {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+.follow-btn:hover {
+  background-color: rgb(198, 195, 195);
+}
+.share-profile:hover {
+  background-color: rgb(198, 195, 195);
+}
+#circle1 {
+  background-color: orange;
+  top: 20%;
+  left: 15%;
+  transform: translate(-10%, -50%);
+  box-shadow: 1px 1px 30px 5px orange;
+}
+#circle2 {
+  background-color: purple;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  right: 17%;
+  transform: translate(50%, 100%);
+  box-shadow: 1px 1px 30px 2px purple;
+}
+.circles {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.boxes {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: aquamarine;
+  border-radius: 10%;
+  top: 20%;
+  left: 69%;
+  animation-name: square;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  box-shadow: 1px 1px 30px 2px aquamarine;
+}
+@keyframes circle {
+  0% {
+    transform: translate(20%, 30%);
+  }
+}
+@keyframes square {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+.share-via {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 145px;
+  padding-left: 10px;
+  justify-content: space-around;
+  background-color: rgba(214, 211, 211, 0.894);
+  border-radius: 5px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  visibility: hidden;
+  color: black;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+.icons {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+#facebook:hover {
+  box-shadow: 1px 1px 10px rgb(40, 40, 171);
+}
+#instagram:hover {
+  box-shadow: 1px 1px 10px red;
+}
+#linkedin:hover {
+  box-shadow: 1px 1px 10px rgb(9, 143, 227);
+}
+.icons div {
+  width: 15%;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+}
+.icons img {
+  width: 100%;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  font-weight: 600;
+}
+.cross-btn {
+  font-size: 20px;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  cursor: pointer;
+}

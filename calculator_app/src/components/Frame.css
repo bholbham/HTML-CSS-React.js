@@ -1,0 +1,13 @@
+.frame_wrapper {
+  width: 432px;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  width: 395px;
+  height: 50%;
+  text-align: end;
+  font-size: 5em;
+  color: white;
+}

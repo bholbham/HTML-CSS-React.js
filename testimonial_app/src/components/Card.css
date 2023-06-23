@@ -1,0 +1,23 @@
+.card_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  background-color: aqua;
+  /* overflow: hidden; */
+}
+.image_container {
+  height: 50%;
+  width: 50%;
+  border-radius: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.image_container img {
+  width: 100%;
+}
+.bio {
+}
+.about_me {
+}
